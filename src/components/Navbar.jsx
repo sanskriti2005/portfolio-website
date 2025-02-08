@@ -1,27 +1,61 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import './styles/Navbar.css'
+import { Link } from "react-scroll";
+import "./styles/Navbar.css";
 
 const Navbar = () => {
   return (
     <nav>
       <div className="nav-bar">
         <div className="nav-links">
-          <NavLink to="/" className="nav-link">
+          <Link
+            to="home"
+            smooth={true}
+            duration={500}
+            activeClass="active"
+            className={`nav-link active`}
+          >
             Home
-          </NavLink>
-          <NavLink to="/about-me" className="nav-link">
+          </Link>
+          <Link
+            to="about-me"
+            smooth={true}
+            duration={500}
+            activeClass="active"
+            className="nav-link"
+          >
             About Me
-          </NavLink>
-          <NavLink to="/projects" className="nav-link">
+          </Link>
+          <Link
+            to="projects"
+            smooth={true}
+            duration={500}
+            spy={true}
+            activeClass="active"
+            className="nav-link"
+          >
             Projects
-          </NavLink>
-          <NavLink to="/experience" className="nav-link">
+          </Link>
+          <Link
+            to="experience"
+            smooth={true}
+            duration={500}
+            spy={true}
+            activeClass="active"
+            className="nav-link"
+          >
             Experience
-          </NavLink>
-          <NavLink to="/contact" className="nav-link">
+          </Link>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            spy={true}
+            activeClass="active"
+            className="nav-link"
+          >
             Contact
-          </NavLink>
+          </Link>
         </div>
       </div>
     </nav>
