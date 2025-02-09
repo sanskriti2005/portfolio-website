@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import { Element } from 'react-scroll';
+import AboutMe from './components/AboutMe';
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
 
         <Element name="about-me">
           <section id="about-me" className="section">
-            <h1>About Me</h1>
+            <AboutMe/>
           </section>
         </Element>
 
