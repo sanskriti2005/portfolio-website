@@ -5,6 +5,7 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
+import { Element } from 'react-scroll';
 
 
 function App() {
@@ -12,27 +13,37 @@ function App() {
   return (
     <>
       <Navbar />
-      <div>
-      <section id="home" className="section">
-        <h1>Home</h1>
-      </section>
+      <div className='container' id="container">
+      <Element name="home">
+          <section id="home" className="section">
+            <Home/>
+          </section>
+        </Element>
 
-      <section id="about-me" className="section">
-        <h1>About Me</h1>
-      </section>
+        <Element name="about-me">
+          <section id="about-me" className="section">
+            <h1>About Me</h1>
+          </section>
+        </Element>
 
-      <section id="projects" className="section">
-        <h1>Projects</h1>
-      </section>
+        <Element name="projects">
+          <section id="projects" className="section">
+            <h1>Projects</h1>
+          </section>
+        </Element>
 
-      <section id="experience" className="section">
-        <h1>Experience</h1>
-      </section>
+        <Element name="experience">
+          <section id="experience" className="section">
+            <h1>Experience</h1>
+          </section>
+        </Element>
 
-      <section id="contact" className="section">
-        <h1>Contact</h1>
-      </section>
-      </div>
+        <Element name="contact">
+          <section id="contact" className="section">
+            <h1>Contact</h1>
+          </section>
+        </Element>
+        </div>
     </>
   )
 }

@@ -1,63 +1,74 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { Link } from "react-scroll";
+import { Link, scrollSpy } from "react-scroll";
 import "./styles/Navbar.css";
+import img from "../assets/img.jpg";
 
 const Navbar = () => {
+  useEffect(() => {
+    scrollSpy.update();
+  }, []);
   return (
     <nav>
+      <div className="image">
+        <img src={img} alt="headshot-image" className="img" />
+      </div>
       <div className="nav-bar">
         <div className="nav-links">
           <Link
             to="home"
             smooth={true}
             duration={500}
+            spy={true}
             activeClass="active"
-            className={`nav-link active`}
+            offset={0}
+            className="nav-link"
           >
             Home
           </Link>
           <Link
             to="about-me"
-            smooth={true}
             duration={500}
+            spy={true}
             activeClass="active"
+            offset={0}
             className="nav-link"
           >
             About Me
           </Link>
           <Link
             to="projects"
-            smooth={true}
+            activeClass="active"
+            offset={0}
+            className="nav-link"
             duration={500}
             spy={true}
-            activeClass="active"
-            className="nav-link"
           >
             Projects
           </Link>
           <Link
             to="experience"
-            smooth={true}
             duration={500}
             spy={true}
             activeClass="active"
+            offset={0}
             className="nav-link"
           >
             Experience
           </Link>
           <Link
             to="contact"
-            smooth={true}
             duration={500}
             spy={true}
             activeClass="active"
+            offset={0}
             className="nav-link"
           >
             Contact
           </Link>
         </div>
       </div>
+      <button className="resume-btn">Resume</button>
     </nav>
   );
 };
