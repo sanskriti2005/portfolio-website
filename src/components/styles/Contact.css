@@ -1,0 +1,26 @@
+.contacts-section{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contacts-text{
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    padding: 2rem;
+}
+
+.links{
+    display: flex;
+    gap: 2rem;
+}

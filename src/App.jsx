@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import { Element } from 'react-scroll';
 import AboutMe from './components/AboutMe';
 import { Projects } from './components/Projects';
+import { Contact } from './components/Contact';
 
 
 function App() {
@@ -36,7 +37,7 @@ function App() {
 
         <Element name="contact">
           <section id="contact" className="section">
-            <h1>Contact</h1>
+            <Contact/>
           </section>
         </Element>
         </div>
