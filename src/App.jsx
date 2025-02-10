@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import { Element } from 'react-scroll';
 import AboutMe from './components/AboutMe';
+import { Projects } from './components/Projects';
 
 
 function App() {
@@ -29,13 +30,7 @@ function App() {
 
         <Element name="projects">
           <section id="projects" className="section">
-            <h1>Projects</h1>
-          </section>
-        </Element>
-
-        <Element name="experience">
-          <section id="experience" className="section">
-            <h1>Experience</h1>
+            <Projects/>
           </section>
         </Element>
 

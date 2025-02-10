@@ -47,16 +47,6 @@ const Navbar = () => {
             Projects
           </Link>
           <Link
-            to="experience"
-            duration={500}
-            spy={true}
-            activeClass="active"
-            offset={0}
-            className="nav-link"
-          >
-            Experience
-          </Link>
-          <Link
             to="contact"
             duration={500}
             spy={true}

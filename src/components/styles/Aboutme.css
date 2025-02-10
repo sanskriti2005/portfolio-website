@@ -348,8 +348,4 @@
     /* animate the fly out of the particle and its fade out at the end */
     -webkit-animation: position 2.45s linear 0s infinite;
     animation: position 2.45s linear 0s infinite;
-  }
-  
-  
-  
-  
+  }  
