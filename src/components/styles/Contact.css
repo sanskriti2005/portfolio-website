@@ -10,6 +10,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+.contacts-text >div > h1{
+    font-size: 3rem;
+
+}
+
+.contacts-text >div > a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #908f97;
+    font-weight: 900;
+    transition: color 0.5 ease-in-out;
+}
+
+.contacts-text >div > a:hover{
+    color: #3a3a3f;
 }
 
 .footer{
@@ -24,3 +42,5 @@
     display: flex;
     gap: 2rem;
 }
+
+/* animations */

@@ -51,6 +51,7 @@
     grid-area: proj2;
     border-radius: 10px;
     background-color: #111d13;
+    transition: transform 0.3s ease-in-out;
 }
 
 .project2 > div{

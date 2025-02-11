@@ -8,17 +8,16 @@ export const Contact = () => {
     <div className="contacts-section">
       <div className="contacts-text">
         <div>
-          <h1>Text 1</h1>
-          <a href="">Text 2 with modal</a>
+          <h1>I'd love to collaborate</h1>
+          <a href="mailto:sanskritisri27@gmail.com">Let's talk!</a>
         </div>
       </div>
       <div className="footer">
-        <div className="animation">AAA</div>
         <div className="links">
-          <a href="https://www.linkedin.com/in/sanskriti-s/">
+          <a href="https://www.linkedin.com/in/sanskriti-s/" target="_blank">
             <FaLinkedinIn size={35}/>
           </a>
-          <a href="https://github.com/sanskriti2005">
+          <a href="https://github.com/sanskriti2005" target="_blank">
             <FaGithub size={35}/>
           </a>
         </div>
