@@ -45,6 +45,10 @@ nav {
   transition: background 0.3s ease-in-out;
 }
 
+.nav-links > button{
+  border: none;
+}
+
 .nav-link.active {
   background: #111d13;
 }
