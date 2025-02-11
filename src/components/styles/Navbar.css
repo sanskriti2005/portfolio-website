@@ -65,4 +65,7 @@ nav {
   color: #111d13;
   padding: 0.5rem;
   border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  text-decoration: none;
 }

@@ -1,0 +1,56 @@
+/* home section styling */
+.home-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+  }
+  
+  .home-section > div > div > h1{
+    font-size: 2rem;
+  }
+  .home-section > div > div > h2{
+    text-align: end;
+    font-size: 1rem;
+  }
+  
+  .typing-container {
+    font-size: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 3s steps(22) forwards, blink 0.7s infinite;
+  }
+  
+  .text{
+    font-size: 100px;
+  }
+  
+  .skills{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    align-items: center;
+  }
+  
+  .skill{
+    padding: 0.5rem;
+    border-radius: 20px;
+    background-color: #111d13;
+  
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
+  
+  
