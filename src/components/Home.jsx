@@ -1,12 +1,15 @@
 import React from "react";
 import img from "../assets/img.jpg";
-import './styles/Home.css'
+import "./styles/Home.css";
 
 const Home = () => {
   return (
     <>
       <div className="home-section">
         <div>
+          <div className="home-image">
+            <img src={img} alt="headshot" className="home-img" />
+          </div>
           <div>
             <h2>Hi there! 👋</h2>
             <h1>I'm Sanskriti </h1>
