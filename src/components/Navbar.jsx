@@ -1,26 +1,29 @@
-import React, { useState, useEffect } from 'react';
-import './styles/Navbar.css';
-import img from '../assets/img.jpg';
+import React, { useState, useEffect } from "react";
+import "./styles/Navbar.css";
+import img from "../assets/img.jpg";
 
 const Navbar = () => {
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState("home");
 
   const sections = [
-    { id: 'home', label: 'Home' },
-    { id: 'about-me', label: 'About Me' },
-    { id: 'projects', label: 'Projects' },
-    { id: 'contact', label: 'Contact' },
+    { id: "home", label: "Home" },
+    { id: "about-me", label: "About Me" },
+    { id: "projects", label: "Projects" },
+    { id: "contact", label: "Contact" },
   ];
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY + window.innerHeight / 2;
-    let currentSection = 'home';
+    let currentSection = "home";
 
     sections.forEach((section) => {
       const element = document.getElementById(section.id);
       if (element) {
         const { offsetTop, offsetHeight } = element;
-        if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+        if (
+          scrollPosition >= offsetTop &&
+          scrollPosition < offsetTop + offsetHeight
+        ) {
           currentSection = section.id;
         }
       }
@@ -30,16 +33,20 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const handleResumeClick = () => {
-    window.open('https://drive.google.com/file/d/1N8ucU7KA9IRQoVUyIjb0NNsYNOuxjO4P/view?usp=sharing');
+    window.open(
+      "https://drive.google.com/file/d/1N8ucU7KA9IRQoVUyIjb0NNsYNOuxjO4P/view?usp=sharing"
+    );
     setTimeout(() => {
-      window.open('https://drive.google.com/uc?export=download&id=1N8ucU7KA9IRQoVUyIjb0NNsYNOuxjO4P');
+      window.open(
+        "https://drive.google.com/uc?export=download&id=1N8ucU7KA9IRQoVUyIjb0NNsYNOuxjO4P"
+      );
     }, 2000);
   };
 
@@ -48,7 +55,7 @@ const Navbar = () => {
     if (element) {
       window.scrollTo({
         top: element.offsetTop,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
   };
@@ -58,12 +65,27 @@ const Navbar = () => {
       <div className="image">
         <img src={img} alt="headshot" className="img" />
       </div>
+
+      {/* Hidden checkbox to toggle menu */}
+      <input type="checkbox" id="menu-toggle" hidden />
+
+      {/* Hamburger Menu Icon */}
+      <div className="hamburger-div">
+        <label htmlFor="menu-toggle" className="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </label>
+      </div>
+
       <div className="nav-bar">
         <div className="nav-links">
           {sections.map((section) => (
             <button
               key={section.id}
-              className={`nav-link ${activeSection === section.id ? 'active' : ''}`}
+              className={`nav-link ${
+                activeSection === section.id ? "active" : ""
+              }`}
               onClick={() => handleNavClick(section.id)}
             >
               {section.label}
@@ -71,6 +93,7 @@ const Navbar = () => {
           ))}
         </div>
       </div>
+
       <button className="resume-btn" onClick={handleResumeClick}>
         Resume
       </button>
@@ -79,9 +102,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
 
 // import React, { useEffect, useState } from "react";
 // import { Link, scrollSpy } from "react-scroll";
