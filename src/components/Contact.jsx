@@ -19,7 +19,7 @@ export const Contact = () => {
           </a>
           <a href="https://github.com/sanskriti2005" target="_blank">
             <FaGithub size={35}/>
-          </a>
+          </a> 
         </div>
       </div>
     </div>

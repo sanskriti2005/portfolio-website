@@ -1,46 +1,65 @@
-.contacts-section{
-    height: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.contacts-section {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.contacts-text{
-    height: 85%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.contacts-text {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5rem;
 }
 
-.contacts-text >div > h1{
-    font-size: 3rem;
-
+.contacts-text > div > h1 {
+  font-size: 3rem;
 }
 
-.contacts-text >div > a{
-    text-decoration: none;
+.contacts-text > div > a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #908f97;
+  font-weight: 900;
+  transition: color 0.5 ease-in-out;
+}
+
+.contacts-text > div > a:hover {
+  color: #3a3a3f;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  align-self: flex-end;
+  justify-content: end;
+  padding: 2rem;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+}
+
+/* --- RESPONSIVENESS --- */
+
+@media screen and (max-width: 768px) {
+
+    .contacts-section {
+        flex-direction: column;
+        justify-content: space-around;
+      }
+  .contacts-text > div > h1 {
     font-size: 2rem;
-    color: #908f97;
-    font-weight: 900;
-    transition: color 0.5 ease-in-out;
-}
+  }
 
-.contacts-text >div > a:hover{
-    color: #3a3a3f;
-}
+  .contacts-text > div > a {
+    font-size: 2rem;
+  }
 
-.footer{
-    width: 100%;
-    display: flex;
-    align-self: flex-end;
-    justify-content: end;
-    padding: 2rem;
+  .footer {
+    justify-content: center;
+  }
 }
-
-.links{
-    display: flex;
-    gap: 2rem;
-}
-
-/* animations */

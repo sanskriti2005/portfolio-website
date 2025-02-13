@@ -9,6 +9,13 @@
 .home-section > div > div > h1 {
   font-size: 2rem;
 }
+
+.home-section > div > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .home-section > div > div > h2 {
   text-align: end;
   font-size: 1rem;
@@ -45,6 +52,15 @@
 
 .home-image {
   display: none;
+}
+
+.home-resume-btn{
+  display: none;
+  width: 8rem;
+  color: #111d13;
+  padding: 0.3rem;
+  border-radius: 5px;
+  border: none;
 }
 
 @keyframes typing {
@@ -153,7 +169,11 @@
   .skills {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.5rem; /* Adjusted spacing */
+    gap: 0.5rem; 
+  }
+
+  .home-resume-btn{
+    display: block;
   }
 
   .home-image {
