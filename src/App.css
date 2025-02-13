@@ -31,11 +31,17 @@ body {
 }
 
 .section{
-  height: 100vh;
+  height: 90vh;
 }
 
 #root {
   background: inherit;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .section{
+    height: 70vh;
+  }
 }
 
 @keyframes gradientAnimation {
